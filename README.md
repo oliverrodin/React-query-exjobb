@@ -1,6 +1,3 @@
-# chtgptexjobb
-
-
 State management i React.js med hjälp av React Query 
  
  
@@ -8,7 +5,7 @@ State management i React.js med hjälp av React Query
 
  
 
-Ett examensarbete utfört av: 
+A degree project carried out by: 
 
 Oliver Rodin 
 
@@ -49,7 +46,7 @@ Oliver Rodin
 
  
 
-1. Sammanfattning 
+1. Summary 
 
  
 
@@ -68,157 +65,93 @@ Oliver Rodin
 
  
 
-2. Innehållsförteckning 
-
  
-
-​​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​​ 
-
  
 
  
 
+3 Introduction 
  
+
+3.1. Background 
+ 
+
+Today, the demand for scalable and efficient web applications (PWAs) is high. State management and data management is a critical factor in developing a robust and easy-to-maintain application, and it is especially important for frontend developers to have a deep understanding of that concept. 
+
+During my Lia at Apptech 24 AB, I have exclusively worked in one of their products, EasyStaff. The app is a modern take on an intranet where companies share news, chat, invite to activities, keep track of staffing with absence management and calendar. All this in a safe and secure environment protected by BankID.  
+
+During the work with Easy Staff, I have understood the importance of state management and data communication. Quite quickly I saw an opportunity to immerse myself in this in my degree project. Partly to build on my portfolio with relevant knowledge but also to generate benefit over Apptech. 
+
+After careful consideration together with my supervisor, it has resulted in a migration of Easy Staff's current data warehouse (state management, data-fetching) consisting of various technologies and libraries to a solution based on React Query.  
+
+Since React Query has been in the pipeline at Apptech for a while, my thesis is an excellent test opportunity for the library to be able to evaluate afterwards if it is something that should be implemented in future React projects at Apptech. 
+
+ 
+
+3.2 Purpose  
+ 
+Basically, the purpose is to test React Query as a possible solution to a recurring problem in today's component-based front-end development, state-management. 
+
+In addition, the purpose is also to deepen my own knowledge of React Query and state management in general. Which will hopefully benefit me in my future career. 
+
+By bringing the library into an already existing application, I feel that my purpose is in focus, as I do not have to think about developing a foundation in the form of a database, a backend and a UI, but I can focus exclusively on the depth of React Query and its possibilities to centralize data management and communication with the backend. 
 
  
 
  
  
 
+3.3. Delimitation 
  
 
-3 Introduktion 
+I will not develop my own application from scratch. 
  
 
-3.1 Bakgrund 
+I will not further develop Easy Staff functionally, but I will focus on implementing and evaluating React Query in the already existing functionality. 
  
 
-Idag är efterfrågan på skalbara och effektiva webbapplikationer (PWA:s) stort. State management och datahantering är en kritisk faktor för att utveckla en robust och lättunderhållen applikation, och det är särskilt viktigt för frontend-utvecklare att ha en djup förståelse för det konceptet. 
-
-Jag har under min Lia hos Apptech 24 AB uteslutande arbetat i en av deras produkter, EasyStaff. Appen är en modern take på ett intranät där företag delar nyheter, chattar, bjuder in till aktiviteter, håller koll på bemanning med frånvarohantering och kalender. Allt detta i en trygg och säker miljö skyddat av BankID.  
-
-Under arbetet med Easy Staff så har jag förstått vikten av state management och datakommunikation. Ganska snabbt såg jag en möjlighet att i mitt examensarbete fördjupa mig i detta. Dels för att bygga på min portfolio med relevant kunskap men även för att generera nytta gentemot Apptech. 
-
-Efter noggrant övervägande tillsammans med min handledare så har det resulterat i en migrering av Easy Staffs nuvarande datalager (state management, data-fetching) bestående av diverse tekniker och bibliotek till en lösning som bygger på React Query.  
-
-Då React Query har varit i pipen på Apptech ett tag är mitt examensarbete ett ypperligt testtillfälle av biblioteket för att i efterhand kunna utvärdera om det är något som ska implementeras i kommande React-projekt hos Apptech. 
-
+I will use Easy Staff's existing API and not change any shape or structure in it. I want to see if React Query can adapt to the already existing needs.  
  
 
-3.2 Syfte  
+I will use React Query to manage and centralize data, and will not investigate other possible solutions or state-management libraries.  
  
-I grunden är syftet att testa React Query som en möjlig lösning på ett återkommande problem i dagens komponentbaserade frontend-utveckling, state-management. 
 
-Utöver det är syftet också att fördjupa mina egna kunskaper i React Query och state-management i stort. Vilket förhoppningsvis kommer att gynna mig i min kommande karriär. 
-
-Genom att lyfta in biblioteket i en redan existerande applikation så känner jag att mitt syfte hamnar i fokus, då jag inte behöver tänka på att utveckla en grund i form av en databas, en backend och ett UI utan jag kan fokusera uteslutande på fördjupningen i React Query och dess möjligheter för att centralisera datahantering och kommunikation med backend. 
+I may have to change the scope of the implementation during the work due to lack of time. 
 
  
 
- 
- 
+3.4 Methods 
 
-3.3 Avgränsning 
- 
+To achieve the purpose of the thesis and test React Query as a possible solution to state-management in Easy Staff, I have chosen to follow an iterative work process. 
 
-Jag kommer inte att utveckla en egen applikation från grunden. 
- 
+First, I have conducted a thorough research of React Query, its benefits and limitations, and how it can be applied in Easy Staff. After the research, React Query was implemented in Easy Staff and advantages and disadvantages appeared. 
 
-Jag kommer inte att vidareutveckla Easy Staff funktionsmässigt utan jag kommer att fokusera på att implementera och utvärdera React Query i den redan existerande funktionaliteten. 
- 
-
-Jag kommer att använda mig av Easy Staffs redan existerande API och inte ändra någon form eller struktur i det. Jag vill se om React Query kan anpassa sig till de redan existerande behoven.  
- 
-
-Jag kommer använda React Query för att hantera och centralisera data, och kommer inte undersöka andra möjliga lösningar eller state-managementbibliotek.  
- 
-
-Jag kommer eventuellt att behöva ändra omfattningen av implementationen under arbetets gång på grund av tidsbrist. 
-
- 
-
-3.4 Metod 
-
-För att uppnå syftet med examensarbetet och testa React Query som en möjlig lösning på state-management i Easy Staff, har jag valt att följa en iterativ arbetsprocess. 
-
-Först har jag genomfört en noggrann research av React Query, dess fördelar och begränsningar, och hur det kan appliceras i Easy Staff. Efter researchen implementerades React Query i Easy Staff och fördelar och nackdelar dök upp. 
-
-Efter implementeringen har jag testat och utvärderat resultaten genom att mäta prestanda, användarupplevelse och utvecklarupplevelse. Jag har också genomfört en jämförelse med Easy Staffs tidigare state-managementlösningar för att kunna utvärdera hur React Query presterar i jämförelse med den redan befintliga lösningen. 
+After implementation, I have tested and evaluated the results by measuring performance, user experience and developer experience. I have also conducted a comparison with Easy Staff's previous state-management solutions to evaluate how React Query performs in comparison to the already existing solution. 
 
  
 
  
  
 
-4 Genomförande  
+4 Implementation  
 
  
 
-4.1 Introduktion till React Query och dess funktionalitet 
+4.1 Introduction to React Query and its functionality 
  
 
-React Query är ett kraftfullt opensource-bibliotek som skapades av Tanner Linsley 2019.  
-Det hanterar hämtning, cachning, synkronisering och uppdatering av server states. 
+React Query is a powerful opensource library created by Tanner Linsley in 2019.   
+It handles retrieval, caching, synchronization, and updating server states. 
 
-Överlag så ger biblioteket användaren möjligheter till att bygga snabba, responsiva applikationer med förbättrad UX. Detta genom att minska antalet nätverks-requests, förenkla datahantering, förbättra prestanda och användarupplevelsen. Biblioteket erbjuder många funktioner som trotts sin komplexitet är anpassningsbara till en mängd olika användningsområden. 
+Overall, the library gives the user the opportunity to build fast, responsive applications with improved UX. This by reducing the number of network requests, simplifying data management, improving performance and user experience. The library offers many features that, despite their complexity, are adaptable to a variety of uses. 
 
  
 
-4.1.1 Kommunikation 
+4.1.1 Communication 
  
 
-React Query kommunicerar mellan frontend och backend, det kan hantera en mängd olika datakällor så som REST-API, GraphQL och websockets. I denna rapport kommer jag dock att utgå från det första alternativet med hjälp av axios. 
-Kommunikationen sker oavsett datakälla genom React Querys inbyggda hooks, här nedan kommer två exempel på hur det kan se ut. Första exemplet hämtar data från källa och det andra skickar data till källa. Gemensamt för de båda är att de är inkapslade i en custom-hook för att man ska kunna dela logiken bland flera komponenter i applikationen och på så sätt inte behöva repetera kod:  
+React Query communicates between frontend and backend, it can handle a variety of data sources such as REST API, GraphQL and websockets. In this report, however, I will start from the first option using axios.  
+Communication takes place regardless of data source through React Query's built-in hooks, below are two examples of what it can look like. The first example retrieves data from source, and the second sends data to source. Common to both is that they are encapsulated in a custom-hook so that you can share the logic among several components in the application and thus do not have to repeat code:  
  
  
 
@@ -231,44 +164,44 @@ Kommunikationen sker oavsett datakälla genom React Querys inbyggda hooks, här 
 
  
 
-När applikationen använder en RQ-hook för att hämta data anges en unik “query-key” för varje unik dataförfrågan. Denna query-key används sedan för att identifiera dataförfrågningen och för att cachea datat för vidare användning. 
+When the application uses an RQ hook to retrieve data, a unique "query-key" is specified for each unique data request. This query-key is then used to identify the data request and to cache the data for further use. 
 
-När en dataförfrågan görs så returneras det omedelbart utan att förfrågan skickas om det redan skulle finnas i cachen. Om datat inte finns i cachen skickas nätverksförfrågan till API:t för att hämta det från databasen och när hämtningen gått igenom så cachas det automatiskt av RQ under den angivna nyckeln.  
+When a data request is made, it is returned immediately without sending the request if it should already be in the cache. If the data is not in the cache, the network request is sent to the API to retrieve it from the database and once the download is complete, it is automatically cached by RQ under the specified key.  
 
-Kombinerar man RQ:s teknik med egna custom-hooks som i exemplen ovan så kan samma data enkelt hämtas av flera olika komponenter i React så länge man anger rätt query-key i frågan. Detta minimerar antalet nätverksförfrågningar och förbättrar prestandan avsevärt. 
+If you combine RQ's technology with your own custom hooks as in the examples above, the same data can easily be retrieved by several different components in React as long as you specify the correct query-key in the query. This minimizes the number of network requests and significantly improves performance. 
 
  
 
 4.1.2 Cache 
  
 
-React Querys cache-system har nämnts lite i förgående stycke men här beskrivs det lite mer ingående. Cachen fungerar på så vis att den lagrar data i minnet under en begränsad tid, default så lagras datan i 5 minuter men caheTimen kan ställas på varje useQuery individuellt om så önskas. Detta gör såklart att det går extremt snabbt för applikationen att rendera ut data på skärmen som har hämtats tidigare utan att det behöver göras nya nätverksförfrågningar. 
+React Query's caching system has been mentioned a bit in the previous paragraph, but here it is described in a little more detail. The cache works in such a way that it stores data in memory for a limited time, by default the data is stored for 5 minutes but the caheTim can be set on each useQuery individually if desired. Of course, this makes it extremely fast for the application to render data on the screen that has been previously retrieved without the need for new network requests. 
 
-Utöver detta går det att konfigurera cachen på flera sätt, några exempel är cachTime som nämndes ovan, alltså hur länge ska datat ligga i cachen, man kan ställa in en specifik lagringstyp t.ex. “localStorage” eller “sessionStorage” och bestämma vad som ska ske när cachen blir full.  
-
- 
- 
-
-React Query har ett tillhörande bibliotek som heter React-Query-DevTools som ger en fantastisk överblick av vad för data som är cachat under vilka nycklar, om de är mountade och vilken status varje cachenyckel har. För att förenkla arbetet med RQ och förstå bibliotekets fullständiga potential bör devtools användas, det är varje RQ-utvecklares bästa vän och ett fantastiskt kompliment från RQ-teamet.  
+In addition to this, it is possible to configure the cache in several ways, some examples are cachTime mentioned above, ie how long should the data stay in the cache, you can set a specific storage type e.g. "localStorage" or "sessionStorage" and decide what should happen when the cache becomes full.  
 
  
-
-4.1.3 UX-förbättringar 
-
- 
-Utöver hämtning, cachning, synkronisering och uppdatering av server states kan React Query även förbättra användarupplevelsen (UX) på andra sätt. Till exempel hanterar RQ automatiskt laddningstillstånd och felhantering, vilket leder till att det blir lättare att bygga användarvänliga gränssnitt som kan förse användarna med viktig feedback under tiden som data hämtas från databasen.  
-
-RQ erbjuder även funktioner som:  
-- Polling - med hjälp av RQ:s refetch-funktion kan hämtning av data utföras med ett förbestämt tidsintervall. 
-- Pagination/Infinite Scroll – Att rendera paginerat data förekommer väldigt ofta idag, detta förenklar RQ med bara några få simpla förändringar i useQuery-hooken. 
-- Optimistic Updates  -  Uppdatera Cache innan servern, UI kan renderas om direkt. 
  
 
-Dessa och många andra inte än nämnda funktioner underlättar utveckling av komplexa applikationer som bygger på uppdateringar i realtid. 
+React Query has an associated library called React-Query-DevTools that provides a fantastic overview of what data is cached under which keys, if they are mounted, and what status each cache key has. To simplify working with RQ and understand the full potential of the library, devtools should be used, it is every RQ developer's best friend and a fantastic compliment from the RQ team.  
 
-Överlag så förenklar RQ drastiskt hanteringen av asynkront serverdata på ett sätt som inte många andra state-managementbibliotek gör. Genom att centralisera serverdata i en och samma cache fast under egna unika query-keys har vi tillgång till samma data från hela applikationen och om vi använder oss av RQ:s hooks i egna custom-hooks så behöver inte likvärdig kod repeteras utan det är bara att anropa rätt hook för att få tillgång till rätt data.   
+ 
 
-Detta leder till att utvecklare kan fokusera mer på att bygga användarupplevelsen och mindre på att hantera data och nätverksförfrågningar då mycket av logiken för detta sker under huven på RQ:s hooks. Detta kan leda till kortare utvecklingstider och mer robusta applikationer som över tid är lättare att underhålla. 
+4.1.3 UX improvements 
+
+ 
+In addition to retrieving, caching, synchronizing, and updating server states, React Query can also improve the user experience (UX) in other ways. For example, RQ automatically handles load state and error handling, making it easier to build user-friendly interfaces that can provide users with important feedback while retrieving data from the database.  
+
+RQ also offers features such as:  
+ - Polling - using RQ's refetch function, retrieval of data can be performed at a predetermined time interval. 
+ - Pagination/Infinite Scroll – Rendering paginated data occurs very often today, this simplifies RQ with just a few simple changes to the useQuery hook. -  
+Optimistic Updates - Update Cache before server, UI can be rerendered instantly. 
+ 
+
+These and many other not yet mentioned features facilitate the development of complex applications based on real-time updates. 
+
+Overall, RQ drastically simplifies the management of asynchronous server data in a way that not many other state management libraries do. By centralizing server data in one and the same cache but under our own unique query-keys, we have access to the same data from the entire application and if we use RQ's hooks in our own custom hooks, equivalent code does not need to be repeated, but it is just a matter of calling the right hook to get access to the right data.   
+
+This means that developers can focus more on building the user experience and less on handling data and network requests as much of the logic for this takes place under the hood of RQ's hooks. This can lead to shorter development times and more robust applications that over time are easier to maintain. 
 
  
 
@@ -279,29 +212,29 @@ Detta leder till att utvecklare kan fokusera mer på att bygga användarupplevel
 
 4.2 Implementering av React Query i Easy Staff 
 
-Easy Staff är ett modernt intranät för kommunikation på arbetsplatsen. Applikationen består av 8st moduler: 
+Easy Staff is a modern intranet for communication in the workplace. The application consists of 8 modules: 
 
-Chatt 
+Chat 
 
-Nyheter 
+News 
 
-Karriär  
+Career  
 
-Utveckling 
+Development 
 
-Anställda 
+Employees 
 
 Lunch 
 
-Admin/Profil 
+Admin/Profile 
 
-Kalender 
+Calendar 
 
-Utöver dessa finns det även lite funktioner som login/logout, notifikationer och autentisering. Det var i ordningen ovan jag implementerade biblioteket i applikationen, modul för modul. 
+In addition to these, there are also some features such as login/logout, notifications and authentication. It was in the order above that I implemented the library in the application, module by module. 
 
-Mitt mål efter första veckans fördjupning av React Query och genomgång av Easy Staff blev direkt att jag skulle implementera biblioteket genomgående i hela applikationen. Eftersom arbetet i de olika modulerna har varit snarlikt så kommer jag att beskriva tillvägagångsättet med hjälp av chatt-modulen här nedan. 
+My goal after the first week of in-depth React Query and review of Easy Staff was immediately that I would implement the library throughout the application. Since the work in the different modules has been similar, I will describe the approach using the chat module below. 
 
-Vecka 2 började jag implementeringen med att installera biblioteket i applikationen och få den extremt lilla delen med boilerplate-kod på plats för att kunna börja använda mig av biblioteket. 
+Week 2 I started the implementation by installing the library in the application and getting the extremely small part with boilerplate code in place to be able to start using the library. 
   
 
  
@@ -309,26 +242,16 @@ Vecka 2 började jag implementeringen med att installera biblioteket i applikati
  
  
 
-Detta är den boilerplatekod som måste vara på plats för att kunna börja använda sig av RQ. Utöver boilerplate-koden så satte jag också en grund för hur jag ville ha RQ-koden strukturerad i dokumentträdet. Det slutade med att jag skapade en “hooks”-mapp i varje modul och delade upp logiken på ett modulplan, RQ-logik för nyhetsmodulen fick bo i den modul-mappen.  På så sätt tycker jag att man fick en bra överblick av det hela. 
+This is the boilerplate code that must be in place to start using RQ. In addition to the boilerplate code, I also set a foundation for how I wanted the RQ code structured in the document tree. I ended up creating a "hooks" folder in each module and divided the logic on a module plane, RQ logic for the news module had to live in that module folder.  In this way, I think you got a good overview of the whole thing. 
 
  
 
-4.2.1 Hämta data 
+4.2.1 Retrieving data 
  
 
-Efter installationen var det bara att börja byta ut kommunikationen med backenden och basera den på RQ-hooks som kapslades in i egna custom-hooks som i exemplen i början. Jag valde att lägga upp logiken på sådant vis för att på ett enkelt sätt kunna dela den mellan komponenter i applikationen. Här nedan ser vi ett exempel från min kod, där jag använder mig av RQ:s useInfiniteQuery-hook som finns för att på ett enkelt sätt hämta bitar av data som sedan fylls på vart efter skärmen skrollas nedåt.  
+After installation, it was just a matter of replacing the communication with the backend and basing it on RQ hooks that were encapsulated in their own custom hooks as in the examples at the beginning. I chose to set up the logic in such a way to easily be able to divide it between components in the application. Below we see an example from my code, where I use RQ's useInfiniteQuery hook that is available to easily retrieve pieces of data that are then filled in as the screen scrolls down.  
 
  
- 
-
- 
- 
-
- 
-
-Det tillvägagångssättet kompletterar också RQ-cachen på bästa sätt. Vill jag hämta mina states i detta fall min chatt-lista ifrån cachen kan jag enkelt göra det med hjälp av mina custom-hooks och detta gäller genomgående i hela applikationen.  
-Här nedan hämtar jag in mina chattar till ChatListPage-komponenten för att sedan rendera ut dom i UIt:  
-
  
 
  
@@ -336,25 +259,35 @@ Här nedan hämtar jag in mina chattar till ChatListPage-komponenten för att se
 
  
 
-4.2.2 Uppdatera data 
- 
-
-När jag kände att jag fått koll på hur jag hämtar data från servern var det dags att angripa uppdatering av data. Även här görs detta med hjälp av custom-hooks men här har jag istället kapslat in RQ:s useMutation-hook för att uppdatera/mutera data. Till skillnad från när man hämtar data så vill man ofta utföra olika efteraktioner när man uppdaterat datat. Detta löser man med olika callbacks i useMutation-hooken, om datat laddas upp korrekt kan man med hjälp av onSucces hämta om listan med chattar i detta fall för att rendera ut den nya chatten man precis skapat. Men om något skulle gå snett och useMutation skulle kasta ett error så finns möjligheten att plocka upp detta i en onError-callback där man kan meddela användaren att något gått snett och konsol-logga error-meddelandet för utvecklarnas del. Här ser ni ett exempel på en custom-hook som laddar upp en ny chatt till databasen.   
+That approach also complements the RQ cache in the best way. If I want to retrieve my states in this case my chat list from the cache, I can easily do so using my custom hooks and this applies throughout the application.  
+Below I download my chats to the ChatListPage component and then render them in the UI:  
 
  
-
- 
-
- 
-
-Men om man gömmer useMutation-hooken i en custom-hook hur kan man då utföra olika actions från specifika komponenter? Det är ju oftast där UI och client-states finns, behöver man skicka dessa som argument till custom-hooken? Svar nej, här glänser RQ. Till skillnad från när man hämtar data och anropar en useQuery som körs direkt automatiskt så är det nu utvecklaren som bestämmer när useMutation-hooken ska köras. Har man en komponent som har funktionen att uppdatera data anropar man den specifika custom-hooken från komponenten och när det är dags att köra uppdateringen så anropar man en funktion som heter mutate(), det är den funktionen som bestämmer när useMutation-hooken ska köras och i sin tur datat ska skickas till servern.  
 
  
  
 
  
 
-Det är även i mutate-funktionen som man kan komma åt samma callbacks som i hooken, onSucces, onError och onSettled. Detta betyder att man kan sätta specifika actions för varje komponent som använder sig av samma custom-hook medans man i custom-hooken kan köra actions som man alltid vill köra oavsett varifrån hooken anropas. Exempel på komponentspecifika-actions skulle kunna vara att man vill stänga en modal, navigera till en ny rutt efter success eller meddela användaren att något gått snett om uppdateringen kastar ett error. Här ser ni ett exempel från min kod där mutate-funktionen anropas i en submitHandler som i sin tur laddar upp den nya chatten till databasen. 
+4.2.2 Updating data 
+ 
+
+Once I felt I had a grasp of how to retrieve data from the server, it was time to attack updating the data. Here too, this is done using custom-hooks, but here I have instead encapsulated RQ's useMutation hook to update/mutate the data. Unlike when retrieving data, you often want to perform various after-actions when you update the data. This is solved with different callbacks in the useMutation hook, if the data is uploaded correctly, you can with the help of onSucces redownload the list of chats in this case to render out the new chat you just created. But if something should go wrong and useMutation would throw an error, there is the possibility to pick this up in an onError callback where you can notify the user that something has gone wrong and console-log the error message on behalf of the developers. Here you can see an example of a custom hook that uploads a new chat to the database.   
+
+ 
+
+ 
+
+ 
+
+But if you hide the useMutation hook in a custom hook, how can you perform different actions from specific components? This is usually where UI and client-states are, do you need to pass these as arguments to the custom-hook? Answer no, here RQ shines. Unlike retrieving data and calling a useQuery that runs directly automatically, it is now the developer who decides when to execute the useMutation hook. If you have a component that has the function to update data, you call the specific custom-hook from the component and when it is time to run the update, you call a function called mutate(), it is that function that decides when the useMutation hook should run and in turn the data should be sent to the server.  
+
+ 
+ 
+
+ 
+
+It is also in the mutate function that you can access the same callbacks as in the hook, onSucces, onError and onSettled. This means that you can set specific actions for each component that uses the same custom-hook while in the custom-hook you can run actions that you always want to run regardless of where the hook is called from. Examples of component-specific actions could be closing a modal, navigating to a new route after success, or notifying the user that something has gone wrong if the update throws an error. Here you see an example from my code where the mutate function is called in a submitHandler which in turn uploads the new chat to the database. 
 
  
 
@@ -365,38 +298,18 @@ Det är även i mutate-funktionen som man kan komma åt samma callbacks som i ho
  
 4.2.3 State management  
 
-Efter att ha implementerat React Query i hela chatmodulen har antalet lokala states i react-komponenterna minskat drastiskt, delar av dem har centraliserats till RQ:s cache och på så sett hämtas de nu in via respektive custom-hook. Loading- och Error-states hanteras nu i RQ:s logik vilket betyder att dom nu också hämtas in från samma ställe.   
+After implementing React Query throughout the chat module, the number of local states in the react components has been drastically reduced, parts of them have been centralized to RQ's cache and thus they are now retrieved via the respective custom-hook. Loading- and Error-states are now handled in RQ's logic, which means that they are now also collected from the same place.  
 
-Detta kanske inte ser ut som någon stor skillnad men koden till höger är efter RQ implementerats, komponenten har nu bara states som är direkt kopplat till UI:t. All mutering av data sker direkt i cachen.  
+This may not look like a big difference but the code on the right is after RQ is implemented, the component now only has states that are directly linked to the UI. All mutating of data takes place directly in the cache.  
 
-Den största skillnaden är dock den stora minskningen av tillfälliga states, sådana som har funnits för att hålla koll på ett booleanskt värde för en toggle eller ett aktivt objekt av någon typ. Dessa har helt plockats bort och hanteras nu direkt i cachen. Ovan är isPinned och isPrivate exempel på sådana, innan RQ så behövde dessa finnas för att sätta värdet på två stycken toggles, dels visade värdet det tillfälliga statet på varje toggle innan komponenten renderades om efter en submit. Sedan var det också dessa states som skickades med i submiten.  
-
- 
- 
-
- 
-
-Med RQ plockar istället de två toggle-knapparna värdet direkt från cachen och när någon av de ändras så uppdateras också cachen direkt med hjälp av “optimistic updates” vilket betyder att värdet i cachen uppdateras direkt på klick och UI:t renderas lika snabbt om till det nya värdet. Efter det skickas datat till databasen i bakgrunden, om uppdateringen returnerar success så utför cachen en bakgrundshämtning av datat och uppdateras och får statusen fresh. Men eftersom det nya värdet redan finns i cachen så är detta inte något som syns i UI:t. Skulle det vara så att uppdateringen skulle kasta ett error så utförs en rollback och togglen renderas om. Här nedan ser ni hur detta ser ut i kod i useMutation-hooken:  
-
- 
+The main difference, however, is the large reduction in temporary states, ones that have existed to keep track of a Boolean value for a toggle or active object of some type. These have been completely removed and are now managed directly in the cache. Above are isPinned and isPrivate examples of such, before RQ these needed to exist to set the value of two toggles, partly the value showed the temporary state on each toggle before the component was rerendered after a submit. Then it was also these states that were included in the submit.  
 
  
  
 
  
 
-4.2.4 Förbättra UX 
- 
-
-Med React Query har jag kunnat förbättra användarupplevelsen på flera plan. Flera förbättringar sker under huven på RQ, om en rutt har besökts av användaren så ligger dess data i cachen så går användaren tillbaka till samma rutt senare renderas rutten omedelbart med datat från cachen. Om användaren loggar in på Easy Staff för att kolla dagens lunch och sedan jobbar ett tag med annat, nästa gång hen går tillbaka till Easy staff-fliken i webbläsaren hämtas sidan om i bakgrunden men renderas bara om utifall nya data existerar. Samma sak sker efter en tillfällig nätverksdipp. Detta sker för att försäkra att användaren ska få ta del av den senaste informationen. 
-
-Utöver det som sker under huven har utvecklaren många möjligheter att förbättra användarupplevelsen, en sådan förbättring är som beskrivet i paragrafen ovan, möjligheten att göra “optimistic updates” direkt i cachen.  
-
-En annan möjlighet som finns är RQ:s möjlighet att hämta data innan UI:t renderas ut genom prefetch(). Detta har gjort det möjligt att plocka bort stora mängder loding-bars och spinners. Vilket har resulterat i ett rappare UI som känns mer behagligt för användarens öga. Ett exempel på en prefetch i chat-modulen är att när jag hovrar över chattens ikon innan den klickas på så prefetchas chattlistan och de pinnade chattarna vilket betyder att datat redan finns när användaren klickar på ikonen och chatt-modalen öppnas. 
-
- 
-
-Pretech funktionen fyller cachen på samma sätt som en hämtning med useQuery, så om de delar samma queryKey populerar de samma cache-entry. Koden för den tidigare nämnda prefetchen ser ut så här: 
+With RQ, the two toggle buttons instead pick the value directly from the cache and when either of them is changed, the cache is also updated directly using "optimistic updates", which means that the value in the cache is updated directly on clicks and the UI is rendered just as quickly to the new value. After that, the data is sent to the database in the background, if the refresh returns success, the cache performs a background retrieval of the data and is updated and given the status fresh. However, since the new value is already in the cache, this is not something that is visible in the UI. Should it be the case that the update should throw an error, a rollback is performed and the toggle is rerendered. Below you can see what this looks like in code in the useMutation hook:  
 
  
 
@@ -404,43 +317,63 @@ Pretech funktionen fyller cachen på samma sätt som en hämtning med useQuery, 
  
 
  
-Utvecklaren kan också sätta ett refetch-intervall på. vald query. Detta har jag utnyttjat i Chat-modulen för att få ett mjukare flöde i chatten. Så fort ett chattrum är öppet (mounted) så refetchas meddelandena varannan sekund. På så sätt upplevs chatten direkt och rapp. Det enda som behöver göras för att dra nytta av denna funktion är att sätta ett refetch-intervall i vald useQuery-hook:  
+
+4.2.4 Improve UX 
+ 
+
+With React Query, I have been able to improve the user experience on several levels. Several improvements take place under the hood of RQ, if a route has been visited by the user, its data is in the cache so the user goes back to the same route later, the route is rendered immediately with the data from the cache. If the user logs in to Easy Staff to check today's lunch and then works for a while on other things, the next time they go back to the Easy staff tab in the browser, the page is redownloaded in the background but only rendered if new data exists. The same thing happens after a temporary network dip. This is done to ensure that the user receives the latest information. 
+
+In addition to what happens under the hood, the developer has many opportunities to improve the user experience, such an improvement is as described in the paragraph above, the ability to make "optimistic updates" directly in the cache.  
+
+Another possibility is RQ's ability to retrieve data before rendering the UI through prefetch(). This has made it possible to remove large amounts of solder-bars and spinners. Which has resulted in a rapper UI that feels more pleasing to the user's eye. An example of a prefetch in the chat module is that when I hover over the chat icon before clicking on it, the chat list and pinned chats are prefetched, which means that the data already exists when the user clicks on the icon and the chat modal opens. 
+
+ 
+
+The pretech function populates the cache in the same way as a fetch with useQuery, so if they share the same queryKey, they populate the same cache entry. The code for the previously mentioned prefetch looks like this: 
+
+ 
+
+ 
+ 
+
+ 
+The developer can also put a refetch interval on. selected query. I have used this in the Chat module to get a smoother flow in the chat. As soon as a chat room is open, the messages are refetched every two seconds. In this way, the chat is experienced directly and raptly. The only thing that needs to be done to take advantage of this feature is to put a refetch range in the selected useQuery hook:  
 
  
 
  
 
-Det tillvägagångssättet jag beskrivit ovan med hjälp av chatt-modulen, hämta data, uppdatera data,  state-management och förbättra UX har jag använt mig av genom alla moduler i applikationen. Tack vare att jag började med en av de mest komplicerade modulerna har jobbet efter flytet på bra, min förmåga att se vad react query kan och inte kan tillföra har förbättrats modul för modul och slutresultatet av implementationen är jag nöjd med trotts att jag valt att utelämna en del smidiga funktioner pga en del yttre faktorer.  
+The approach I described above using the chat module, retrieving data, updating data, state management and improving UX I have used through all modules in the application. Thanks to the fact that I started with one of the most complicated modules, the job after the flow has been good, my ability to see what react query can and cannot add has improved module by module and the end result of the implementation I am satisfied with even though I have chosen to leave out some smooth functions due to some external factors.  
 
  
  
 
-4.3 Kod- och prestandajämförelse före och efter implementering 
+4.3 Pre- and post-implementation code and performance comparison 
 
-4.3.1 Skillnad kod och utvecklarupplevelse 
+4.3.1 Difference code and developer experience 
 
-Efter implementeringen av React Query har utvecklarupplevelsen märkbart förbättrats. Tack vare cachen har nu applikationen en centraliserad plats för server-states. Kommunikationen mellan komponenter och statesen sker genom custom-hooks vilket också underlättar användningen av datat enormt. Komponenter som behövar ta del av samma data kan nu göra det på ett enkelt sätt då det bara är att anropa den aktuella hooken och därifrån plocka datat som ska renderas vilket i sin tur också reducerar antalet anrop gentemot databasen.  
+After implementing React Query, the developer experience has noticeably improved. Thanks to the cache, the application now has a centralized location for server states. Communication between components and states takes place through custom-hooks, which also facilitates the use of the data enormously. Components that need to access the same data can now do so in a simple way as it is just to call the current hook and from there pick the data to be rendered, which in turn also reduces the number of calls to the database.  
 
-Innan implementeringen gjorde varje komponent egna api-anrop för allt data som behövdes, behövde komponenten data från tre endpoints så resulterade det i tre useCallbacks respektive useEffects(). Allt efter att applikationen växer blir komponenterna allt mer komplexa och till slut nästintill omöjliga att underhålla.  
+Before implementation, each component made its own API calls for all the data needed, the component needed data from three endpoints so it resulted in three useCallbacks and useEffects() respectively. As the application grows, the components become increasingly complex and eventually almost impossible to maintain.  
 
-I nuläget anropas istället tre custom-hooks. Genom att jobba på detta sätt plockas mycket av logiken bort ifrån react-komponenterna och delas upp i flera custom-hooks som tillsammans bildar likt ett servicelager för all logik. Det betyder att komponenterna blir mer rena vy-komponenter som hanterar renderingen av UI:t. I slutändan blir kodmängden likvärdig men den sprids ut och hamnar i mer logiska fack. Repot blir mer översiktligt och applikationen mer skalbar. Vill man i framtiden ersätta React Query med något annat bibliotek för att hantera state-management och data-hämtning så behöver man inte in i komponenterna och grotta. Antingen modifierar man det servicelager som redan finns eller så skapar man bara ett nytt som förser komponenterna med data av samma struktur. Framtidssäkrad kod är bra kod. 
+At this time, three custom-hooks are called instead. By working in this way, much of the logic is removed from the react components and divided into several custom-hooks that together form a service layer for all logic. This means that the components become more pure view components that handle the rendering of the UI. In the end, the amount of code becomes equivalent, but it is spread out and ends up in more logical compartments. Repot becomes more transparent and the application more scalable. If you want to replace React Query with some other library to handle state-management and data retrieval in the future, you do not need to go into the components and cave. Either you modify the service layer that already exists or you just create a new one that provides the components with data of the same structure. Future-proof code is good code. 
 
-Länk till komponentexempel med och utan React. Query. 
+Link to component samples with and without React. Query. 
  
 
-4.3.2 Jämförelse prestanda 
+4.3.2. Comparison performance 
 
-När det kommer till prestandan har jämförelsen varit mer utmanande, prestandamätningar kan vara komplicerade och är beroende av flera faktorer som hårdvara, din webbläsare och andra applikationer som körs på datorn. För att få exakta mätningar bör applikationen testas på olika enheter och i olika webbläsare. Tiden för detta har inte riktigt funnits under dessa veckor, fokuset har också automatiskt hamnat på användarupplevelsen då det är där React Query kan göra underverk. Eftersom så pass mycket är förkonfigurerat under huven på RQ är det också svårt att veta vad och hur man ska testa prestandan.  
+When it comes to performance, the comparison has been more challenging, performance measurements can be complicated and are dependent on several factors such as hardware, your browser and other applications running on the computer. To get accurate measurements, the application should be tested on different devices and in different browsers. The time for this has not really existed during these weeks, the focus has also automatically ended up on the user experience as that is where React Query can work wonders. With so much pre-configured under the hood of RQ, it's also hard to know what and how to test the performance.  
 
-Det som har gjorts i testväg är lighthouse-rapporter på koden före och efter implementeringen för att få ett konkret kvitto på eventuella prestandaförbättringar. I rapporterna har inte prestanda-skillnaden varit speciellt märkbar, dels för att applikationen lider av andra större problem som t.ex. hanteringen av bilder och en för stor DOM, så det är där lighthouse har lagt sitt fokus.  
+What has been done in the test path is lighthouse reports on the code before and after implementation to get a concrete receipt of any performance improvements. In the reports, the performance difference has not been particularly noticeable, partly because the application suffers from other major problems such as the handling of images and a too large DOM, so that's where lighthouse has put its focus.  
 
-Det som går att utläsa rent konkret av rapporterna är att efter implementeringen av React Query har performence ökat från 69 till 82 där det är “Total Blocking Time” som framförallt har förbättrats, från 310ms ner till 130ms. Detta betyder att tiden tills att användaren kan börja integrera med appen har blivit kortare och det låter som en mycket rimlig prestandaförbättring eftersom det är just det som React Query förbättrar med sin cache.  
-Båda lighthouse-rapporterna kommer finnas medskickade som bilagor om det finns ett intresse av att läsa dem.  
+What can be deduced concretely from the reports is that after the implementation of React Query, performance has increased from 69 to 82 where it is "Total Blocking Time" that has primarily improved, from 310ms down to 130ms. This means that the time until the user can start integrating with the app has become shorter and it sounds like a very reasonable performance improvement because that is exactly what React Query improves with its cache.  
+Both lighthouse reports will be included as attachments if there is an interest in reading them.  
 
  
  
 
-Utöver lighthouse har jag också mätt omladdningstiden (page reload) på 5 av rutterna i applikationen där man kan se en genomgående förbättring av prestandan. På alla rutter har omladdningstiden minskat med en sekund. Se resultat nedan: 
+In addition to lighthouse, I have also measured the page reload time on 5 of the routes in the application where you can see a consistent improvement in performance. On all routes, the reloading time has been reduced by one second. See results below: 
 
 Nyhetssidan: 
  
@@ -458,119 +391,119 @@ Personalsidan:
 Kärriärssidan:  
  
 
-Efter de jämförelser som har gjorts är det bara att konstatera att prestandaoptimeringar inte bara handlar om siffror utan användarupplevelsen har en minst lika stor inverkan på resultat. Det är för slutanvändaren applikationen byggs och det största målet är att tillfredsställa dem.  
+After the comparisons that have been made, it is only to be stated that performance optimizations are not just about numbers, but the user experience has at least as big an impact on results. It is for the end user the application is built and the main goal is to satisfy them.  
 
  
  
  
 
-4.4 Utvärdering 
+4.4 Evaluation 
 
-I grova drag har jag gjort det jag hade planerat i mitt examens-arbete, jag har fördjupat mig i React Query, samt byggt på med mycket kunskap om state-management överlag. Jag har lyckats implementerat biblioteket och min nya kunskap i en redan existerande applikation i detta fall Easy Staff. Mitt mål var att centralisera hela applikationens server states med hjälp av React Query, det har jag i stort sett lyckats med, bortsett från en modul (notifikationer) som jag valde att hoppa över men det fanns redan med i planen i planeringsstadiet.  
+In broad terms, I have done what I had planned in my degree project, I have immersed myself in React Query, and built on with a lot of knowledge about state-management in general. I have managed to implement the library and my new knowledge in an already existing application, in this case Easy Staff. My goal was to centralize the entire application's server states using React Query, I have largely succeeded with that, apart from one module (notifications) that I chose to skip but it was already included in the plan in the planning stage.  
 
-Om jag jämför det utförda arbetet med planeringen så har jag lyckats estimerat rätt så bra, det enda som har ruckat lite på utförande kontra planeringen har varit sjukdomar och VAB på hemmaplan. Det har inneburit att jag behövt jobba lite längre pass men slår man ut timmarna så har jag nog lagt ungefär en vecka på fördjupning i React Query för att sedan kunna klara av implementeringen av biblioteket under vecka två respektive tre för att sedan kunna slutföra rapporten under vecka fyra. 
+If I compare the work done with the planning, I have managed to estimate quite well, the only things that have changed a bit on execution versus planning have been illnesses and VAB at home. This has meant that I have had to work a little longer shifts, but if you knock out the hours, I have probably spent about a week on in-depth study in React Query and then be able to manage the implementation of the library during weeks two and three respectively and then be able to complete the report during week four. 
 
-Om jag läser igenom mitt syfte med detta exjobb så tycker jag det har uppfyllts så gott det går på fyra veckor. Jag har absolut ökat min förståelse samt belyst vikten av state management i React.js. Under implementationen av biblioteket har jag inte bara lärt mig hur states hanteras i det utan även vikten av att samla dessa på ett ställe för att öka skalbarheten i applikationen. Jag har också lärt mig skillnaden på client- och serverstates, tidigare hade jag inte ens reflekterat över att det gick att gruppera states på det viset och att det faktiskt finns skillnader i hantering av de. Client-states ägs av applikationen, all vetskap om statet bor i appen medan server-states ägs av servern, clienten lånar bar det senaste datat för att rendera ut det på skärmen. Detta betyder att vi måste vara mer bejakande när det gäller hanteringen av server states, vi måste hela tiden se till att vi renderar det senaste datat. Eftersom statets sanning finns på servern så måste det detta kommuniceras via nätverksförfrågningar och det är detta som React Query löser så bra med många av deras funktioner. Det ser till att du alltid har fräscht data utan att överproducera nätvärksförfrågningar, och de förfrågningar som görs sker ofta i bakgrunden och påverka inte slutanvändaren.  
+If I read through my purpose with this degree project, I think it has been fulfilled as best it can in four weeks. I have definitely increased my understanding and highlighted the importance of state management in React.js. During the implementation of the library, I have not only learned how states are handled in it, but also the importance of gathering these in one place to increase the scalability of the application. I have also learned the difference between client and server states, previously I had not even reflected on the fact that it was possible to group states in this way and that there are actually differences in handling them. Client-states are owned by the application, all knowledge of the state lives in the app while server-states are owned by the server, the client borrows the latest data to render it on the screen. This means that we have to be more affirmative when it comes to managing server states, we have to constantly make sure that we render the latest data. Since the state's truth is on the server, this must be communicated via network requests and this is what React Query solves so well with many of their functions. It ensures that you always have fresh data without overproducing network requests, and the requests made often happen in the background and do not affect the end user.  
 
-Har jag nått mitt fördefinierade mål med ex-jobbet?  
-Det tycker jag att jag har, det finns flera konkreta exempel på hur React Query kan effektivisera Easy Staff, både prestandamässigt men även rent kodmässigt. Många av de exemplen har jag tagit upp och påvisat i denna rapport. 
-
- 
-
- 
- 
-
-4.5 Analys 
-
- 
-
-Jag har fått mycket gjort under detta ex-jobb men det är även saker som jag hade velat göra som fallit bort av olika anledningar. Grunden sitter men det är framförallt funktioner i React Query som inte matchar med applikationens sedan innan existerande arkitektur. 
-
-Det största bortfallet och det enda jag saknar har varit användningen av “optimistic updates” som faktiskt är en av React Querys absolut största “selling points”, många rör sig mot en användning av RQ tack vare detta så det är tråkigt att det inte har fungerat så bra för min del. Anledningen till detta är dels strukturen i Easy Staffs API men även applikationens arkitektur som inte alltid rimmar med kraven för att kunna utföra en “optimistic update”.  
-
-Funktionen bygger på rena data bindings, ska man uppdatera en property i ett objekt så uppdateras hela objektet utifrån ID, på så vis kan man direkt hämta det cachade datat med samma id och uppdatera det innan man skickar det till servern. I mitt fall är API:t emellanåt strukturerat på ett sådant sätt så att en uppdatering av en property kan ha en egen put-funktion och således ett eget nätverksanrop. Detta betyder att det bara är propertyns värde och objektets ID som skickas i request-bodyn vilket betyder att man inte har hela objektet när man ska utför uppdateringen av cachen.  
-Men då kan man ju spontant tänka, det är väl bara hämta det cachade datat med samma id, spreada det och ersätta rätt property med det nya värdet?  
-Teoretiskt så funkar det absolut men då bygger det på att man har en statisk queryKey eftersom det är genom den man kommer åt rätt cache-entry i cachen och kan hämta och sätta det data man vill uppdatera. Jamen det borde ju funka kan man tänka, inga konstigheter.  
-
-I många av mina fall fungerar inte detta heller då jag använder mig av useInfiniteQuerys med dynamsika queryKeys, det vill säga att det finns möjlighet att filtrera datat med en söksträng eller en vald kategori. 
-
- 
-
-Detta resulterar i att jag inte kan hämta det aktiva datat från cachen eftersom jag aldrig kan vara säker på hur min queryKey ser ut och hur ska jag då kunna uppdatera cachen?  
-
-En lösning på problemet skulle kunna vara att jag hämtar det aktuella objektet som ska uppdateras med hjälp av en useQuery och en getById, då har jag en statisk queryKey: 
-
-Då kan jag ju i min optimistic update bara hämta det objektet och sedan uppdatera det och retunera tillbaka till cachen. Det fungerar absolut, objektet uppdateras i cachen under ovanstående cache-entry men uppdateringen renderas inte ut förens efter att nyhetssidan har renderats om. Vad nu detta? Jag fattade ingenting i stunden jag satt och provade mig fram, men efter ett tag klarnade det för mig. 
-
- 
- 
-
-Omrenderingen av nyhetsobjektet sker inte för att det är inte getById-datat som renderas på skärmen i grunden utan det data som är synligt på skärmen kommer från listan med nyhetsobjekt. 
-
-Men om jag i min uppdatering hämtar listan från cachen och sedan spreadar listan och ersätter objektet med samma ID med mitt getById-objekt? Detta funkar inte heller för jag kan inte hämta listan från cachen eftersom jag fortfarande inte kan veta hur listans queryKey ser ut. 
-
-Här börjar listan på olika tillvägagångssätt att ta slut men jag har en sista idé.  
-Om jag när jag hämtar objektet med getById renderar om den valda nyheten med det datat så borde den optimistiska uppdateringen fungera väl? Ja det stämmer men så som nyhetslistan är byggd så öppnas inte en modal när man väljer en nyhet utan nyhetskortet blir bara större med hjälp av en animation vilket betyder att när getByIdn utförs så kommer hela nyhetslistan renderas om och det är något vi absolut inte vill då det resulterar i en extrem dålig användarupplevelse.  
-
- 
-
-Detta betyder att om jag inte gör drastiska omstruktureringar i UI:t så kommer det att bli svårt att använda sig av optimistic updates i nyhetslistan när jag t.ex. gillar en nyhet eller liknande. Vilket betyder att den actionen är efter implementeringen av React Query långsammare än innan. 
-
-Det här var en av anledningarna till att jag från början ville prova att implementera RQ i Easy Staff då det finns en hel del såna här direkta aktioner. Det kanske finns en lösning på detta problem men ingen jag har hittat på denna korta tid.  
+Have I reached my predefined goal with the degree project?   
+I think I have, there are several concrete examples of how React Query can streamline Easy Staff, both in terms of performance but also purely in terms of code. Many of these examples I have mentioned and demonstrated in this report. 
 
  
 
  
  
 
-5 Erfarenheter och lärdomar 
+4.5. Analysis 
 
  
 
-5.1 Erfarenheter 
+I have gotten a lot done during this degree project but there are also things that I would have liked to do that have fallen away for various reasons. The foundation is there, but it is mainly functions in React Query that do not match with the application's already existing architecture. 
+
+The biggest dropout and the only thing I miss has been the use of "optimistic updates" which is actually one of React Query's absolute biggest "selling points", many are moving towards a use of RQ thanks to this so it is sad that it has not worked so well for me. The reason for this is partly the structure of Easy Staff's API but also the application's architecture, which does not always fit with the requirements to be able to perform an "optimistic update".  
+
+The function is based on pure data bindings, if you update a property in an object, the entire object is updated based on ID, in this way you can directly retrieve the cached data with the same ID and update it before sending it to the server. In my case, the API is sometimes structured in such a way that an update of a property can have its own put function and thus its own network call. This means that only the property's value and the object's ID are passed in the request-body, which means that you do not have the entire object when performing the cache update.  
+But then you can spontaneously think, surely it's just retrieve the cached data with the same id, spread it and replace the right property with the new value?  
+ Theoretically, it absolutely works, but then it is based on having a static queryKey because it is through it that you access the right cache entry in the cache and can retrieve and put the data you want to update. Well it should work, you can think, no oddities.  
+
+In many of my cases, this does not work either as I use useInfiniteQuerys with dynamic queryKeys, that is, it is possible to filter the data with a search string or a selected category. 
 
  
-Efter samspråk med handledare på Apptech så är den största erfarenheten de har dragit av mitt ex-jobb att få se ett intressant nytt bibliotek in action i en applikation som finns ute på marknaden och i kombination med deras beprövade arkitektur och struktur. På så sätt kan ett eventuellt beslut tas av att behålla den tidigare strukturen eller efter mer noggrann utvärdering släppa den vidarearbetade versionen med React Query till produktion. 
 
-En erfarenhet som jag personligen har dragit av projektet är att värdera vikten av arkitektur i större applikationer, en dålig arkitektur resulterar i en svårunderhållen kod och en mindre skalbar produkt medan en bra arkitektur underlättar vidareutveckling, reducerar underhållet och bidrar till en mer skalbar produkt. Det behöver inte vara ett nytt häftigt bibliotek som löser ett sådant problem utan lösningen kan vara att se på det man redan har med andra ögon och strukturera om.  
+As a result, I can't retrieve the active data from the cache because I can never be sure what my queryKey looks like and how am I supposed to refresh the cache?  
 
-Ska man lägga ner extrem många timmar på att föra in ett nytt bibliotek i en redan fungerande applikation, så ska man vara säker på att det hjälper och inte stjälper, för det är inte bara att göra.  
+A solution to the problem could be that I retrieve the current object to be updated using a useQuery and a getById, then I have a static queryKey: 
 
- 
-5.2 Lärdomar  
- 
-
-En viktig lärdom som jag har tagit med mig från detta ex-jobb är att ett väl utformat API är en viktig faktor för att underlätta frontend-utveckling. Om API:et inte är bra designat blir arbetet tyngre och kan leda till mängder av muterat data i frontenden, oavsett hur många avancerade bibliotek som används. Detta påverkar i sin tur användarupplevelsen negativt. Jag tror att det är avgörande att ha en bra kommunikation mellan frontend- och backend-utvecklare för att lösa problem, så som var en viss typ av logik ska hanteras eller hur en datastruktur ska se ut för ett specifikt objekt. 
-
-Denna lärdom har blivit extra tydlig för mig under ex-jobbet eftersom React Query fungerar bäst med ren data-binding. Om detta inte är fallet, måste man börja mutera state och utföra komplicerade åtgärder för att få biblioteket att fungera som det ska. 
-
-En annan lärdom jag har tagit med mig är att det inte bara är att byta ut logik i en redan fungerande applikation. Innan jag började med detta projekt var jag nog lite för naiv och hade inställningen hur svårt kan det vara?  
-Så här i efterhand har jag förstått komplexiteten i det.  
-
-De ovanstående lärdomarna har breddat min förståelse för konceptet programmering och pointerat vikten av att apputveckling är ett lagarbete som bygger på lyhördhet, social kompetens och ett konstant driv framåt. Det är en insikt som jag tycker är väldigt skön, det kommer att förbättra min inställning till kommande arbetsliv då jag definitivt är en lagspelare som älskar sociala sammanhang. 
+Then in my optimistic update I can just download that object and then update it and retune back to the cache. It absolutely works, the object is updated in the cache during the above cache entry but the update is not rendered until after the news page has been rerendered. Now what this? I didn't understand anything in the moment I sat and tried my hand at it, but after a while it became clear to me. 
 
  
  
 
-Rent faktamässigt är den största lärdomen jag tagit med mig är all kunskap jag har fått i React Query, jag tror att detta är ett bibliotek vi kommer få se mer och mer av framöver. Biblioteket förenklar verkligen hanteringen av datalagret i React-applikationer med hjälp av sin cache. Parar man sedan ihop den med egna custom-hooks så har man en skalbar och centraliserad helhetslösning för applikationens server-states.  
+The rerendering of the news item does not happen because it is not the getById data that is rendered on the screen basically, but the data that is visible on the screen comes from the list of news items. 
+
+But what if, in my update, I retrieve the list from the cache and then spread the list and replace the object with the same ID with my getById object? This also doesn't work because I can't retrieve the list from the cache because I still can't know what the list's queryKey looks like. 
+
+This is where the list of different approaches is coming to an end, but I have one last idea.   
+If when I retrieve the object with getById I re-render the selected news with that data, should the optimistic update work well? Yes, that's right, but the way the news list is built, a modal does not open when you select a news item, but the news card just gets bigger with the help of an animation, which means that when getByIdn is executed, the entire news list will be rerendered and that is something we absolutely do not want as it results in an extremely poor user experience.  
 
  
 
-5.3 Projektet idag – utveckling och framtid 
+This means that if I do not make drastic restructurings in the UI, it will be difficult to use optimistic updates in the news list when I e.g. like a news item or similar. Which means that the action after implementing React Query is slower than before. 
 
- 
-Eftersom Easy Staff är en applikation som befinner sig i produktion så vidareutvecklas den hela tiden och har även gjort det under tiden jag arbetat med mitt exjobb. 
-
-Efter denna rapport är klar ska jag presentera resultatet för mina kollegor på apptech, tillsammans ska vi överväga om React Query är något att bygga vidare på i Easy Staff eller ej.  
-
-Sedan kommer jag jobba för att vi ska införa React Query i våran teknikstack inför kommande projekt. Biblioteket är lysande om du frågar mig och jag tror att det gör sig ännu mer rättvisa om man implementerar det från start i ett nytt projekt så att biblioteket får en större chans att samspela med arkitekturen från start. På så vis kan man utnyttja hela biblioteket till fullo.  
+This was one of the reasons why I initially wanted to try implementing RQ in Easy Staff as there are a lot of direct actions like this. Maybe there is a solution to this problem but none I have found in this short time.  
 
  
 
  
  
 
-6 Referenser 
+5 Experiences and lessons learned 
+
+ 
+
+5.1 Lessons learned 
+
+ 
+After talking to supervisors at Apptech, the biggest experience they have gained from my thesis is to see an interesting new library in action in an application that is out on the market and in combination with their proven architecture and structure. In this way, a possible decision can be made to keep the previous structure or, after more careful evaluation, release the further worked version with React Query to production. 
+
+An experience that I have personally drawn from the project is to evaluate the importance of architecture in larger applications, a bad architecture results in a difficult to maintain code and a less scalable product while a good architecture facilitates further development, reduces maintenance and contributes to a more scalable product. It does not have to be a cool new library that solves such a problem, but the solution may be to look at what you already have with different eyes and restructure.  
+
+If you are going to spend an extreme number of hours inserting a new library into an already functioning application, you should be sure that it helps and does not hinder, because it is not just to do.  
+
+ 
+5.2 Lessons learned  
+ 
+
+An important lesson that I have taken with me from this thesis is that a well-designed API is an important factor in facilitating frontend development. If the API is not well designed, the work becomes heavier and can lead to lots of mutated data in the frontend, regardless of how many advanced libraries are used. This, in turn, negatively affects the user experience. I think it is crucial to have good communication between front-end and back-end developers to solve problems, such as where a certain type of logic should be handled or what a data structure should look like for a specific object. 
+
+This lesson has become extra clear to me during the degree project because React Query works best with pure data binding. If this is not the case, then one must begin to mutate the state and perform complex actions to get the library working properly. 
+
+Another lesson I have taken with me is that it is not just to replace logic in an already working application. Before I started with this project, I was probably a little too naïve and had the attitude how hard can it be?  
+In retrospect, I have understood the complexity of it.  
+
+The above lessons have broadened my understanding of the concept of programming and emphasized the importance of app development being a team effort based on responsiveness, social skills and a constant drive forward. It is an insight that I think is very nice, it will improve my attitude to future working life as I am definitely a team player who loves social contexts. 
+
+ 
+ 
+
+Purely factually, the biggest lesson I have taken with me is all the knowledge I have gained in React Query, I think this is a library we will see more and more of in the future. The library really simplifies the management of the data warehouse in React applications using its cache. If you then pair it with your own custom hooks, you have a scalable and centralized total solution for the application's server states.  
+
+ 
+
+5.3 The project today – development and future 
+
+ 
+Since Easy Staff is an application that is in production, it is constantly being developed and has also done so while I have been working on my degree project. 
+
+After this report is ready, I will present the results to my colleagues at apptech, together we will consider whether React Query is something to build on in Easy Staff or not.  
+
+Then I will work for us to introduce React Query in our technology stack for future projects. The library is brilliant if you ask me and I think it does even more justice if you implement it from the start in a new project so that the library has a greater chance to interact with the architecture from the start. In this way, you can make full use of the entire library.  
+
+ 
+
+ 
+ 
+
+6 References 
 
  
 
@@ -582,7 +515,9 @@ React Query artikell.
 
 Video om React Query. 
 
-Video med grundaren av React Query. 
+Video with the founder of React Query. 
+
+ 
 
  
 
